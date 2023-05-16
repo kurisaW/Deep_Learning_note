@@ -1,0 +1,2 @@
+model_checkpoint_path: "gestureModel"
+all_model_checkpoint_paths: "gestureModel"

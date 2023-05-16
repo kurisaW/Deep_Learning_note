@@ -1,0 +1,45 @@
+
+## **神经网络与深度学习期末作业 ------ 基于Tensorflow的手势识别**
+
+
+**1.采集数据集**
+
+---
+
+- 运行: get_gesture_images.py文件
+  可用不用运行，因为样本集已有
+
+![](C:\Users\LY\Desktop\采集.png)
+
+- 样本集存放的目录：train_gesture_data
+
+![](C:\Users\LY\Desktop\Snipaste_2020-06-27_23-20-14.png)
+
+---
+
+**2.训练模型**
+
+---
+
+- 1. 新建目录：
+   gesture_recognition_model/gestureModel 和gesture_recognition_model/gestureModel_one
+  2. 运行: gesture_recongnition.py文件
+
+  ![](C:\Users\LY\Desktop\训练.png)
+  
+  
+
+**3.测试样本的预测**
+
+---
+
+ - 运行 pred_gesture.py文件
+
+![](C:\Users\LY\Desktop\踩踩踩踩踩踩.png)
+
+
+
+---
+
+**注：本项目参考自[https://github.com/qiulc/gesture_recongnition](https://github.com/qiulc/gesture_recongnition)，仅供学习参考**
+
