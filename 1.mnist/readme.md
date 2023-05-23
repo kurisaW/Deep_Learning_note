@@ -1,4 +1,4 @@
-# RT-AK K210 Lab3: Mnist
+# Mnist
 
 ## 实验简介
 
@@ -32,29 +32,3 @@ LAB1-MNIST
 +---Utils						# 其他一些脚本文件
 \---课后拓展						# 课后拓展的代码和固件
 ```
-
-## 代码编译方法
-
-把本实验将 `Applications` 文件夹下代码替换到Studio创建的模板工程的 applications 目录下的文件，然后在进行编译。
-
-| 文件                | 描述                                                         |
-| ------------------- | ------------------------------------------------------------ |
-| test_data/          | 嵌入式AI模型得多个测试图片数据                               |
-| img0_chw.h          | 模型推理得图片数据                                           |
-| img0.h              | rgb565的显式数据                                             |
-| main.c              | 包含了模型应用（推理）代码                                   |
-| mnist_kmodel.c      | kmodel 的十六进制文件，使用 RT-AK 部署模型的时候会生成的文件，命名格式：<model_name>_kmodel.c |
-| rt_ai_mnist_model.c | 目标平台相关信息文件。使用 RT-AK 部署模型的时候会生成的文件，命名格式：`rt_ai_<model_name>_kmodel.c` |
-| rt_ai_mnist_model.h | 模型信息相关文件。使用 RT-AK 部署模型的时候会生成的文件，命名格式：`rt_ai_<model_name>_kmodel.h` |
-
-**烧录**
-
-连接好串口，然后使用 K-Flash 工具进行烧写bin文件。
-
-![K-Flash](Images/20210806102920.png)
-
----
-
-其中，正常实验可以使用不带LCD驱动的SDK，
-
-课后拓展的代码请使用带LCD驱动的SDK，编译方式与上面相同。
