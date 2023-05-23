@@ -1,0 +1,12 @@
+from building import *
+
+cwd     = GetCurrentDir()
+src     = Glob('*.c') + Glob('*.cpp') + Glob('./board_config/*.c') 
+CPPPATH = [cwd, os.path.join(cwd,'board_config')]
+
+for i in CPPPATH:
+    print(i)
+
+group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)
+
+Return('group')
