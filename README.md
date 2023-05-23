@@ -1,5 +1,13 @@
 # Deep_Learning_note
+## 说明
+
 本仓库仅用于深度学习笔记记录！
+
+## 项目列表
+
+![img](https://raw.githubusercontent.com/kurisaW/picbed/main/img2023/202305231149520.jpg)
+
+## 致谢
 
 特别鸣谢以下开源仓库：
 
